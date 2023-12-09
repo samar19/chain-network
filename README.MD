@@ -49,4 +49,3 @@ bun dev
 Elysia is running at [localhost:3000](http://localhost:3000).
 ```
 
-You can use this content in your README file for better readability and organization.
