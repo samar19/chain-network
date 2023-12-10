@@ -5,8 +5,15 @@ import  * as ChainList from 'viem/chains';
 
 const erica: Erica = new Erica()
 const router = erica.getRouter()
+var chainlist = []
+var id_counter = 0;
 
-router.get('/api/v1/chainlist', () => ChainList)
+for(var i in ChainList)
+    chainlist.push({ id: id_counter++, meta: ChainList[i]});
+
+console.log(chainlist[2])
+
+router.get('/api/v1/chainlist', () => chainlist)
     .get('/todos/:id',
       (request: IRequest) => `${request.params.id}`
     )
