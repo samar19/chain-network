@@ -1,15 +1,21 @@
-# example
+# surf on
+
+http://localhost:3000/api/v1/chainlist
+
+# Chainlist backend, api server
 
 To install dependencies:
 
 ```bash
-bun install
+bun i
 ```
 
 To run:
 
 ```bash
-bun run index.ts
+bun run dev 
 ```
 
-This project was created using `bun init` in bun v1.0.10. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+# swagger is running on
+
+http://localhost:3000/swagger
